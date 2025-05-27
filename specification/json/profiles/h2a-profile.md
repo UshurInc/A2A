@@ -65,7 +65,7 @@ An `h2a` object consists of:
 
 ## Benefits
 
-- **Minimal**: Adds only what A2A doesn’t already cover.
+- **Minimal**: Adds only what A2A doesn't already cover.
 - **Secure**: Built-in signature mechanism for zero-trust routing environments.
 - **Compositional**: Can be embedded in existing A2A flows without schema breakage.
 

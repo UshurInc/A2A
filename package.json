@@ -1,0 +1,28 @@
+{
+    "name": "h2a-a2a-example",
+    "version": "1.0.0",
+    "description": "H2A Profile implementation with A2A protocol",
+    "main": "dist/index.js",
+    "scripts": {
+        "start:agents": "ts-node examples/h2a-agents.ts",
+        "start:client": "ts-node examples/h2a-client.ts",
+        "test:client": "ts-node examples/h2a-test-client.ts",
+        "test": "npm run start:agents & sleep 5 && npm run test:client",
+        "build": "tsc",
+        "dev": "ts-node-dev --respawn examples/h2a-agents.ts"
+    },
+    "dependencies": {
+        "@types/uuid": "^10.0.0",
+        "cors": "^2.8.5",
+        "express": "^4.18.2",
+        "uuid": "^11.1.0"
+    },
+    "devDependencies": {
+        "@types/cors": "^2.8.17",
+        "@types/express": "^4.17.21",
+        "@types/node": "^20.11.19",
+        "ts-node": "^10.9.2",
+        "ts-node-dev": "^2.0.0",
+        "typescript": "^5.3.3"
+    }
+}
