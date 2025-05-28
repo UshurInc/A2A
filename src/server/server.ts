@@ -53,7 +53,7 @@ export class A2AServer {
                     throw new Error('Invalid JSON-RPC request');
                 }
                 const task = jsonRpcRequest.params;
-                console.log('Received task:', task);
+                console.log('Received task:', JSON.stringify(task, null, 2));
                 const context = new TaskContext(task);
                 const updates = this.taskHandler(context);
 
@@ -79,6 +79,7 @@ export class A2AServer {
 
             try {
                 for await (const update of updates) {
+                    console.log('Sending update:', JSON.stringify(update, null, 2));
                     res.write(`data: ${JSON.stringify(update)}\n\n`);
                     if (update.state === 'completed') {
                         break;
@@ -86,6 +87,7 @@ export class A2AServer {
                 }
             } catch (error: unknown) {
                 const errorMessage = error instanceof Error ? error.message : 'An unknown error occurred';
+                console.error('Error in task subscription:', errorMessage);
                 res.write(`data: ${JSON.stringify({ error: errorMessage })}\n\n`);
             } finally {
                 res.end();

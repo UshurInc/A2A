@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/henrypeter/Ushur/Cursor/H2A/logs/.a752a8cc8c1bede6acb7e35549bcc06d89226508-audit.json",
+    "files": [
+        {
+            "date": 1748372873972,
+            "name": "/Users/henrypeter/Ushur/Cursor/H2A/logs/EdgeAgent-2025-05-27.log",
+            "hash": "e89d17d09088db6c469f3fea6e0a9105d3b7510793ea93ddf9d18115b78429bc"
+        }
+    ],
+    "hashType": "sha256"
+}

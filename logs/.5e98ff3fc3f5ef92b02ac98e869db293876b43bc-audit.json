@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/henrypeter/Ushur/Cursor/H2A/logs/.5e98ff3fc3f5ef92b02ac98e869db293876b43bc-audit.json",
+    "files": [
+        {
+            "date": 1748376081391,
+            "name": "/Users/henrypeter/Ushur/Cursor/H2A/logs/CustomMessageClient-2025-05-27.log",
+            "hash": "04e23b2f38733a051fbe3ac2fe7b38537114fbe7fb97905062b3aacc1d23fd69"
+        }
+    ],
+    "hashType": "sha256"
+}

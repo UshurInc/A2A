@@ -9,7 +9,11 @@
         "test:client": "ts-node examples/h2a-test-client.ts",
         "test": "npm run start:agents & sleep 5 && npm run test:client",
         "build": "tsc",
-        "dev": "ts-node-dev --respawn examples/h2a-agents.ts"
+        "dev": "ts-node-dev --respawn examples/h2a-agents.ts",
+        "example:h2a": "ts-node examples/h2a-example.ts",
+        "example:customer-service": "ts-node examples/h2a-customer-service.ts",
+        "example:custom-messages": "ts-node examples/h2a-custom-messages.ts",
+        "example:interaction": "ts-node examples/h2a-interaction.ts"
     },
     "dependencies": {
         "@types/uuid": "^10.0.0",
