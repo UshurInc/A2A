@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@genkit-ai/googleai": "^1.8.0",
-    "@genkit-ai/vertexai": "^1.8.0",
+    "@genkit-ai/vertexai": "^1.10.0",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.1",
     "body-parser": "^2.2.0",
